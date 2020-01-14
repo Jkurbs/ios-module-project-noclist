@@ -29,6 +29,7 @@ This message will self destruct in 5 seconds.
 */
 //: ## Step 1
 //: Create constants for each of the above agents and store all their information in a tuple.
+
 let ethan = ("Ethan Hunt", realName: "Tom Cruise", accessLevel: 8, compromised: false)
 let jim = ("Jim Phelps", realName: "Jon Voight", accessLevel: 9, compromised: true)
 let claire =  ("Claire Phelps", realName: "Emmanuelle Beart", accessLevel: 5, compromised: false)
@@ -42,9 +43,14 @@ let jack = ("Jack Harmon", realName: "Emilio Estevez", accessLevel: 6, compromis
 let frank = ("Frank Barnes", realName: "Dale Dye", accessLevel: 9, compromised: false)
 
 
+
+
 //: ## Step 2
 //: Place the above constants inside an array. Declare this array as a constant as well.
+
 let agents = [ethan, jim, claire, eugene, frantz, luther, sarah, max, hannah, jack, frank]
+
+
 
 
 //: ## Step 3
@@ -60,9 +66,11 @@ func compromisedAgents() -> Int {
 }
 
 
+
 //: ## Step 4
 //: Call the above function to find the total number of compromised agents and then print a sentence that says "# agents have been compromised!" using string interpolation.
 print("\(compromisedAgents()) agents have been compromised!")
+
 
 
 //: ## Step 5
@@ -80,13 +88,12 @@ func findCleanAgents() -> [Any] {
 }
 
 
+
 //: ## Step 6
 //: Call the above function to find the total number of clean agents and print a message that says "# clean agents out of # total agents." Use the total number of agents in the array from step 2 as the second number in the string.
 findCleanAgents()
 
 print("\(findCleanAgents().count) clean agents out of \(agents.count) agents.")
-
-
 //: ## Step 7
 //: Create a function called "findHighRisk" that prints out the real names and access levels of agents with level 8 or higher. If one of these agents is also currently compromised, add `**WARNING** **COMPROMISED**` to the end of the string that includes their name and access level.
 //: - Example: `Jon Voight, level: 9 **WARNING** **COMPROMISED**`
@@ -106,6 +113,7 @@ func findHighRisk() {
 //: ## Step 8
 //: Call the above function and check the output in the console to ensure it is functioning properly.
 findHighRisk()
+
 
 
 //: ## Step 9
@@ -141,6 +149,7 @@ func findTotal() {
 findTotal()
 
 
+
 //: ## Step 11 (Optional)
 //: Create and call a function that prints the cover names and access levels of all agents, but the list should be sorted by access level, in ascending order.
 func findAgents() {
@@ -151,4 +160,5 @@ func findAgents() {
 }
 
 findAgents()
+
 
